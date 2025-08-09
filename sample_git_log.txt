@@ -1,0 +1,8 @@
+* gh-pages Commit: chore: preparar gh-pages
+| *   Merge: chore: merge feat/contact-form
+| | * feat: añadir formulario de contacto (simulado)
+| *   Merge: chore: merge feat/projects
+| | * feat: añadir sección de proyectos y tarjetas
+| *   Merge: chore: merge diseño header/hero
+| | * style: mejorar header y sección hero
+| * feat: estructura inicial del portafolio (index, styles, script, README)\n

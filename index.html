@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio — CJ Rengifo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- ========================= HEADER ========================= -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#">CJ<span>Dev</span></a>
+      <button id="menu-btn" class="menu-btn" aria-label="Abrir menú">☰</button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#pasatiempos">Pasatiempos</a></li>
+        <li><a href="#juegos-favoritos">Juegos Favoritos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========================= MAIN ========================= -->
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <h1>Hola, soy <span>Christopher Joshua — Más conocido como CJ o Sigma</span></h1>
+        <p>Desarrollador web en formación — Construyo soluciones con corazón y dedicación.</p>
+      </div>
+      <div class="hero-image">
+        <img src="img/yo_fotodeperfil.jpg" alt="Foto de CJ" class="avatar" id="profile-pic" style="cursor:pointer;" />
+      </div>
+    </section>
+
+    <!-- ===== MODAL IMG ===== -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-label="Imagen ampliada">
+      <span class="modal-close" id="modal-close" aria-label="Cerrar">&times;</span>
+      <img class="modal-content" id="modal-img" alt="Imagen ampliada" />
+    </div>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="about" class="about container">
+      <h2>Sobre mí</h2>
+      <p>Soy un desarrollador en formación que disfruta creando interfaces limpias y un backend sólido.</p>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <!-- ===== HABILIDADES ===== -->
+    <section id="skills" class="projects container">
+      <h2>Habilidades</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="img/html5.jpg" alt="HTML5" class="game-img" />
+          <p>HTML5 define la estructura, diseño y contenido de una página web.</p>
+          <h3>HTML5</h3>
+        </article>
+
+        <article class="card">
+          <img src="img/css3.jpg" alt="CSS3" class="game-img" />
+          <p>CSS3 permite definir la presentación visual de documentos HTML/XML.</p>
+          <h3>CSS3</h3>
+        </article>
+
+        <article class="card">
+          <img src="img/javascript.jpg" alt="JavaScript" class="game-img" />
+          <p>JavaScript añade interactividad a las páginas web.</p>
+          <h3>JavaScript (ES6+)</h3>
+        </article>
+
+        <article class="card">
+          <img src="img/python.jpg" alt="Python" class="game-img" />
+          <h3>Python</h3>
+        </article>
+
+        <article class="card">
+          <img src="img/react.png" alt="React" class="game-img" />
+          <p>React es una librería de JavaScript para construir interfaces SPA.</p>
+          <h3>React</h3>
+        </article>
+
+        <article class="card">
+          <img src="img/nodejs.jpg" alt="Node.js" class="game-img" />
+          <p>Node.js permite usar JavaScript en el servidor para crear APIs.</p>
+          <h3>Node.js</h3>
+        </article>
+
+        <article class="card">
+          <img src="img/github.jpg" alt="GitHub" class="game-img" />
+          <h3>GitHub</h3>
+        </article>
+
+        <article class="card">
+          <img src="img/php.jpg" alt="PHP" class="game-img" />
+          <h3>PHP</h3>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ===== PASATIEMPOS ===== -->
+    <section id="pasatiempos" class="projects container">
+      <h2>Pasatiempos</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="img/pasear.jpg" alt="Salir a pasear" class="game-img" />
+          <h3>Salir a pasear</h3>
+          <p>Solo o con amigos a plazas o restaurantes.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/jugarvideojuegos.jpg" alt="Jugar Videojuegos" class="game-img" />
+          <h3>Jugar Videojuegos</h3>
+          <p>Me gustan juegos de estrategia, RPG, FPS, MOBA, etc.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/escucharmusica.jpg" alt="Escuchar música" class="game-img" />
+          <h3>Escuchar música</h3>
+          <p>Escucho desde música clásica hasta los éxitos modernos.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/hacerejercicio.jpg" alt="Hacer ejercicio" class="game-img" />
+          <h3>Hacer Ejercicio</h3>
+          <p>Entreno en casa, parque, playa y a veces en el gimnasio.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ===== JUEGOS FAVORITOS ===== -->
+    <section id="juegos-favoritos" class="projects container">
+      <h2>Juegos Favoritos</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="img/call_of_dutty_blackops.jpg" alt="Call of Duty" class="game-img" />
+          <h3>Call of Duty</h3>
+          <p>Saga de disparos en primera persona reconocida mundialmente.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/freefire_portada.jpg" alt="Free Fire" class="game-img" />
+          <h3>Free Fire</h3>
+          <p>Juego de supervivencia para móviles con 50 jugadores.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/mortalkombat.jpg" alt="Mortal Kombat" class="game-img" />
+          <h3>Mortal Kombat</h3>
+          <p>Juego de lucha famoso por sus fatalities y combates intensos.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/counterstrike.jpg" alt="Counter Strike" class="game-img" />
+          <h3>Counter Strike</h3>
+          <p>Shooter táctico multijugador que revolucionó los FPS.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contact" class="contact container">
+      <h2>Contacto</h2>
+      <p>¿Quieres que construya algo para ti? Escríbeme:</p>
+      <form id="contact-form" onsubmit="handleContact(event)">
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo" required />
+        <textarea name="message" placeholder="Mensaje..." rows="5" required></textarea>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© CJ Rengifo — Portafolio creado con HTML, CSS y JavaScript.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
