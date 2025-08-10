@@ -1,11 +1,26 @@
+/* Nueva tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 :root {
   --bg: #0f1724;
   --card: #0b1220;
-  --accent: #7dd3fc;
+  --accent: #0b0116;
+  /* Verde menta */
   --text: #e6eef8;
-  --muted: #9fb0c5;
+  --muted: #e0dae9;
   --container: 1100px;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fuente especial para el título */
+.hero-text h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Fuente especial para logo y menú */
+.logo,
+.nav-list a {
+  font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -19,7 +34,8 @@ body {
 }
 
 body {
-  background: linear-gradient(180deg, #021027 0%, #071526 100%);
+  background: linear-gradient(180deg, #393839 0%, #0c0c0c 100%);
+  /* degradado morado → verde */
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -83,7 +99,7 @@ body {
 
 .nav-list a:hover {
   color: var(--text);
-  background: rgba(125, 211, 252, 0.06);
+  background: rgba(125, 252, 194, 0.06);
 }
 
 .hero {
@@ -126,7 +142,7 @@ body {
   object-fit: cover;
   display: block;
   border: 4px solid var(--accent);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(22, 4, 66, 0.3);
 }
 
 .about h2,
@@ -171,7 +187,7 @@ body {
   margin-top: 0.6rem;
   padding: 0.4rem 0.6rem;
   border-radius: 8px;
-  background: rgba(125, 211, 252, 0.08);
+  background: rgba(125, 252, 194, 0.08);
   color: var(--accent);
   text-decoration: none;
 }
@@ -246,7 +262,7 @@ textarea {
   max-width: 90%;
   max-height: 80vh;
   border-radius: 10px;
-  box-shadow: 0 0 30px rgba(125, 211, 252, 0.7);
+  box-shadow: 0 0 30px rgba(125, 252, 194, 0.7);
   animation: zoomIn 0.3s ease forwards;
 }
 
@@ -285,5 +301,5 @@ textarea {
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 0.7rem;
-  box-shadow: 0 4px 10px rgba(125, 211, 252, 0.3);
+  box-shadow: 0 4px 10px rgba(125, 252, 194, 0.3);
 }
