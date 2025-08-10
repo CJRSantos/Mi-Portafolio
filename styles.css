@@ -1,28 +1,28 @@
-/* Nueva tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* -------------------
+  Tipografía
+------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;700&display=swap');
 
 :root {
   --bg: #0f1724;
   --card: #0b1220;
   --accent: #0b0116;
-  /* Verde menta */
   --text: #e6eef8;
   --muted: #e0dae9;
   --container: 1100px;
   font-family: 'Poppins', sans-serif;
 }
 
-/* Fuente especial para el título */
-.hero-text h1 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Fuente especial para logo y menú */
+/* Fuentes específicas */
+.hero-text h1,
 .logo,
 .nav-list a {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* -------------------
+  Reset básico
+------------------- */
 * {
   box-sizing: border-box;
 }
@@ -35,19 +35,24 @@ body {
 
 body {
   background: linear-gradient(180deg, #393839 0%, #0c0c0c 100%);
-  /* degradado morado → verde */
   color: var(--text);
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
 }
 
+/* -------------------
+  Contenedores
+------------------- */
 .container {
   max-width: var(--container);
   margin: 0 auto;
   padding: 2rem;
 }
 
+/* -------------------
+  Header y navegación
+------------------- */
 .site-header {
   backdrop-filter: blur(6px);
   position: sticky;
@@ -57,8 +62,8 @@ body {
 
 .nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem 0;
 }
 
@@ -102,6 +107,9 @@ body {
   background: rgba(125, 252, 194, 0.06);
 }
 
+/* -------------------
+  Hero
+------------------- */
 .hero {
   display: flex;
   gap: 2rem;
@@ -140,11 +148,13 @@ body {
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  display: block;
   border: 4px solid var(--accent);
   box-shadow: 0 4px 10px rgba(22, 4, 66, 0.3);
 }
 
+/* -------------------
+  Secciones
+------------------- */
 .about h2,
 .projects h2,
 .contact h2 {
@@ -155,9 +165,9 @@ body {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .skills li {
@@ -168,11 +178,24 @@ body {
   font-size: 0.9rem;
 }
 
+/* Grid 3 en 3 */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
   margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
@@ -192,6 +215,9 @@ body {
   text-decoration: none;
 }
 
+/* -------------------
+  Contacto
+------------------- */
 .contact form {
   display: grid;
   gap: 0.6rem;
@@ -207,6 +233,9 @@ textarea {
   color: var(--text);
 }
 
+/* -------------------
+  Footer
+------------------- */
 .site-footer {
   padding: 2rem 0;
   color: var(--muted);
@@ -215,11 +244,13 @@ textarea {
   border-top: 1px solid rgba(255, 255, 255, 0.03);
 }
 
+/* -------------------
+  Responsivo menú
+------------------- */
 @media (max-width: 800px) {
   .hero {
     flex-direction: column;
     text-align: center;
-    align-items: center;
   }
 
   .menu-btn {
@@ -242,17 +273,15 @@ textarea {
   }
 }
 
-/* Modal de imagen */
+/* -------------------
+  Modal imagen
+------------------- */
 .modal {
   display: none;
   position: fixed;
   z-index: 1000;
   padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -286,7 +315,6 @@ textarea {
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-  user-select: none;
   transition: color 0.3s;
 }
 
@@ -294,7 +322,9 @@ textarea {
   color: var(--accent);
 }
 
-/* Unificado: para juegos y habilidades */
+/* -------------------
+  Imagen juegos/habilidades
+------------------- */
 .game-img {
   width: 100%;
   height: 140px;
