@@ -51,10 +51,41 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-function handleContact(e) {
+const form = document.getElementById('contact-form');
+
+async function handleContact(e) {
   e.preventDefault();
-  const form = e.target;
-  const data = Object.fromEntries(new FormData(form).entries());
-  alert('Gracias ' + data.name + '! Tu mensaje fue recibido (simulado).');
-  form.reset();
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+  
+  const btn = form.querySelector('button');
+  const originalText = btn.innerText;
+  btn.innerText = 'Enviando...';
+  btn.disabled = true;
+
+  try {
+    // REEMPLAZA 'tu-email@gmail.com' CON TU EMAIL REAL AQUÍ ABAJO
+    // Para probarlo la primera vez, recibirás un correo de confirmación de FormSubmit
+    const response = await fetch("https://formsubmit.co/ajax/tu-email@gmail.com", {
+      method: "POST",
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      alert('¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.');
+      form.reset();
+    } else {
+      alert('Hubo un error al enviar el mensaje. Inténtalo nuevamente.');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('Error de conexión. Verifica tu internet.');
+  } finally {
+    btn.innerText = originalText;
+    btn.disabled = false;
+  }
 }
