@@ -13,7 +13,7 @@
   <!-- ========================= HEADER ========================= -->
   <header class="site-header">
     <nav class="nav container">
-      <a class="logo" href="#">CJ<span>Dev</span></a>
+      <a class="logo" href="#"><span>Dev CJRS</span></a>
       <button id="menu-btn" class="menu-btn" aria-label="Abrir menú">☰</button>
       <ul class="nav-list" id="nav-list">
         <li><a href="#home">Inicio</a></li>
@@ -32,8 +32,9 @@
     <!-- ===== HERO ===== -->
     <section id="home" class="hero container">
       <div class="hero-text">
-        <h1>Desarrollador Web Práctico y Soluciones Digitales</h1>
-        <p class="hero-subtitle">HTML, CSS, JavaScript y experiencias con herramientas asistidas por IA</p>
+        <h1 style="color: white;">Desarrollador Web Práctico y Soluciones Digitales</h1>
+        <p class="hero-subtitle" style="color: white;">HTML, CSS, JavaScript y experiencias con herramientas asistidas
+          por IA</p>
         <div style="display: flex; gap: 1rem;">
           <a href="#projects" class="btn">Ver Proyectos</a>
           <a href="#contact" class="btn"
@@ -63,20 +64,32 @@
     </section>
 
     <!-- ===== HABILIDADES ===== -->
-    <!-- ===== HABILIDADES ===== -->
     <section id="skills" class="projects container">
       <h2>Habilidades Técnicas</h2>
       <h3>⭐ Habilidades principales</h3>
       <div class="grid">
         <article class="card">
           <img src="img/html5.jpg" alt="HTML5" class="game-img" />
-          <h3>HTML & CSS</h3>
-          <p>Diseño de páginas web simples y responsive.</p>
+          <h3>HTML</h3>
+          <p>Estructuración de contenido web semántico y optimizado para SEO.</p>
         </article>
+
+        <article class="card">
+          <img src="img/css3.jpg" alt="CSS" class="game-img" />
+          <h3>CSS</h3>
+          <p>Diseño de interfaces visualmente atractivas con un enfoque mobile-first.</p>
+        </article>
+
         <article class="card">
           <img src="img/javascript.jpg" alt="JavaScript" class="game-img" />
           <h3>JavaScript</h3>
-          <p>Lógica y funcionalidades interactivas.</p>
+          <p>Desarrollo de interfaces dinámicas y manipulación del DOM para mejorar la experiencia del usuario.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/python.jpg" alt="Python" class="game-img" />
+          <h3>Python</h3>
+          <p>Creación de scripts robustos, integración de servicios y desarrollo backend escalable.</p>
         </article>
       </div>
 
@@ -85,15 +98,23 @@
         <article class="card">
           <img src="img/react.png" alt="React" class="game-img" />
           <h3>React</h3>
-          <p>Biblioteca para interfaces de usuario.</p>
+          <p>Creación de SPAs (Single Page Applications) interactivas y eficientes.</p>
         </article>
+
         <article class="card">
-          <div style="font-size: 3rem; text-align: center;">📱</div>
-          <h3>React Native / Expo</h3>
+          <img src="img/expo_go.png" alt="Expo Go" class="game-img" />
+          <h3>Expo Go</h3>
+          <p>Entorno de desarrollo para React Native.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/react_native2.png" alt="React Native" class="game-img" />
+          <h3>React Native</h3>
           <p>Desarrollo de Apps Móviles.</p>
         </article>
+
         <article class="card">
-          <div style="font-size: 3rem; text-align: center;">🤖</div>
+          <img src="img/Integración_con APIs_e_IA.png.png" alt="Integración con APIs e IA" class="game-img" />
           <h3>Integración con APIs e IA</h3>
           <p>Consumo de datos y herramientas inteligentes.</p>
         </article>
@@ -103,13 +124,20 @@
       <div class="grid">
         <article class="card">
           <img src="img/github.jpg" alt="Git y GitHub" class="game-img" />
-          <h3>Git & GitHub</h3>
+          <h3>GitHub</h3>
           <p>Control de versiones.</p>
         </article>
+
         <article class="card">
-          <div style="font-size: 3rem; text-align: center;">🔥</div>
-          <h3>Firebase (Básico)</h3>
+          <img src="img/firebase.png" alt="Firebase" class="game-img" />
+          <h3>Firebase</h3>
           <p>Base de datos en tiempo real.</p>
+        </article>
+
+        <article class="card">
+          <img src="img/git.png" alt="Git" class="game-img" />
+          <h3>Git</h3>
+          <p>Control de versiones.</p>
         </article>
       </div>
     </section>
@@ -118,18 +146,8 @@
     <section id="projects" class="projects container">
       <h2>Proyectos y Experiencia Real</h2>
       <div class="grid">
-        <!-- Project 1: Mi Portafolio -->
-        <article class="card">
-          <!-- TODO: Add Screenshot -->
-          <div style="font-size: 3rem; text-align: center;">📂</div>
-          <h3>Mi Portafolio</h3>
-          <p>Sitio web personal para mostrar mis proyectos y habilidades.</p>
-          <p><strong>Estado:</strong> Terminado</p>
-          <a href="https://cjrsantos.github.io/Mi-Portafolio/" target="_blank" class="btn"
-            style="margin-top: 1rem; font-size: 0.8rem;">Ver Repositorio</a>
-        </article>
 
-        <!-- Project 2: Calculator -->
+        <!-- Project 1: Calculator -->
         <article class="card">
           <!-- TODO: Add Screenshot -->
           <div style="font-size: 3rem; text-align: center;">🧮</div>
@@ -141,7 +159,7 @@
             style="margin-top: 1rem; font-size: 0.8rem;">Ver Repositorio</a>
         </article>
 
-        <!-- Project 3: Consumir API de Youtube -->
+        <!-- Project 2: Consumir API de Youtube -->
         <article class="card">
           <!-- TODO: Add Screenshot -->
           <div style="font-size: 3rem; text-align: center;">📺</div>
@@ -153,7 +171,7 @@
             style="margin-top: 1rem; font-size: 0.8rem;">Ver Repositorio</a>
         </article>
 
-        <!-- Project 4: POKEAPI -->
+        <!-- Project 3: POKEAPI -->
         <article class="card">
           <!-- TODO: Add Screenshot -->
           <div style="font-size: 3rem; text-align: center;">🐉</div>
@@ -164,7 +182,7 @@
             style="margin-top: 1rem; font-size: 0.8rem;">Ver Repositorio</a>
         </article>
 
-        <!-- Project 5: VoluntariadosAPP -->
+        <!-- Project 4: VoluntariadosAPP -->
         <article class="card">
           <!-- TODO: Add Screenshot -->
           <div style="font-size: 3rem; text-align: center;">🤝</div>
@@ -176,7 +194,7 @@
             style="margin-top: 1rem; font-size: 0.8rem;">Ver Repositorio</a>
         </article>
 
-        <!-- Project 6: AI Image Generated -->
+        <!-- Project 5: AI Image Generated -->
         <article class="card">
           <!-- TODO: Add Screenshot -->
           <div style="font-size: 3rem; text-align: center;">🎨</div>
@@ -188,7 +206,7 @@
             style="margin-top: 1rem; font-size: 0.8rem;">Ver Repositorio</a>
         </article>
 
-        <!-- Project 7: Voluntariados IIAP Web -->
+        <!-- Project 6: Voluntariados IIAP Web -->
         <article class="card">
           <!-- TODO: Add Screenshot -->
           <div style="font-size: 3rem; text-align: center;">🌐</div>
@@ -247,7 +265,7 @@
           <div>
             <h3>Ingeniería de Software con IA</h3>
             <p><strong>SENATI</strong> | En curso</p>
-            <p style="margin-top: 0.5rem; color: var(--muted);">Formación especializada en desarrollo de software,
+            <p style="margin-top: 0.5rem; color:white">Formación especializada en desarrollo de software,
               algoritmos de inteligencia artificial y soluciones tecnológicas avanzadas.</p>
           </div>
         </article>
@@ -281,13 +299,13 @@
     <section id="contact" class="contact container">
       <h2>Contacto</h2>
       <p>Estoy disponible para proyectos web simples y soluciones digitales.</p>
-      <p>Escríbeme a: <a href="mailto:tu-email@example.com" style="color: var(--accent);">tu-email@example.com</a></p>
+      <p>Escríbeme a: <a href="mailto:mi-email@example.com" style="color:white">mi-email@example.com</a></p>
       <ul style="list-style: none; padding: 0; text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
-        <li>📧 Email: <a href="mailto:tu-email@example.com" style="color: var(--primary);">tu-email@example.com</a></li>
+        <li>📧 Email: <a href="mailto:mi-email@example.com" style="color:white">mi-email@example.com</a></li>
         <li>🐙 GitHub: <a href="https://github.com/cjrsantos" target="_blank"
-            style="color: var(--primary);">github.com/cjrsantos</a></li>
+            style="color:white">github.com/cjrsantos</a></li>
         <li>🌐 Portafolio: <a href="https://cjrsantos.github.io/Mi-Portafolio/" target="_blank"
-            style="color: var(--primary);">cjrsantos.github.io/Mi-Portafolio</a></li>
+            style="color:white">cjrsantos.github.io/Mi-Portafolio</a></li>
       </ul>
       <form id="contact-form" onsubmit="handleContact(event)">
         <input type="text" name="name" placeholder="Tu nombre" required />

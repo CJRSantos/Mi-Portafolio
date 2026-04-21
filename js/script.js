@@ -49,6 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.setAttribute('aria-hidden', 'true');
     }
   });
+
+  // Navbar scroll effect
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".site-header");
+
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
 });
 
 const form = document.getElementById('contact-form');
@@ -57,7 +68,7 @@ async function handleContact(e) {
   e.preventDefault();
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
-  
+
   const btn = form.querySelector('button');
   const originalText = btn.innerText;
   btn.innerText = 'Enviando...';
@@ -68,7 +79,7 @@ async function handleContact(e) {
     // Para probarlo la primera vez, recibirás un correo de confirmación de FormSubmit
     const response = await fetch("https://formsubmit.co/ajax/tu-email@gmail.com", {
       method: "POST",
-      headers: { 
+      headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
